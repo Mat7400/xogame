@@ -25,7 +25,8 @@ namespace XO_WebApp.Controllers
 
         public IActionResult Index(MainModel model)
         {
-            if (Program.mainModelData == null) Program.mainModelData = new MainModel();
+            if (Program.mainModelData == null) 
+                Program.mainModelData = new MainModel();
             //model.xo = "resutl will be here"; 
             return View(Program.mainModelData);
         }
@@ -70,6 +71,10 @@ namespace XO_WebApp.Controllers
                 RES = "✓";
                 next = "X";
             }
+            //check
+            if (Program.mainModelData == null)
+                Program.mainModelData = new MainModel();
+
             var model = Program.mainModelData;
             //заполнить клеточку поля 
             model.Field[cellname] = RES;
@@ -102,7 +107,7 @@ namespace XO_WebApp.Controllers
                 int row = (int)(cellname[0]) - initial;
                 int column = Convert.ToInt32(cellname[1].ToString());
                 string value = keyPair.Value;
-                arr[row, column] = value;
+                arr[column , row] = value;
             }
             //проверим по строкам
             //29.05.2022 edit
@@ -111,15 +116,21 @@ namespace XO_WebApp.Controllers
                 int xcounter = 0;
                 int ocounter = 0;
                 int tcounter = 0;
+                //если счетчик набрал три то его не надо обнулдять
+                //потому что если пустая клетка после 3 в кноце строки счетчик обнулится
+                //это ошибка
                 for (int j = 0; j < model.size; j++)
                 {
                     if (arr[i, j] == "X") xcounter++;
-                    else xcounter = 0;
+                    else if (xcounter <= 3) xcounter = 0;
+
                     if (arr[i, j] == "O") ocounter++;
-                    else ocounter = 0;
+                    else if (ocounter <= 3) ocounter = 0;
+
                     if (arr[i, j] == "✓") tcounter++;
-                    else tcounter = 0;
+                    else if (tcounter <= 3) tcounter = 0;
                 }
+
                 if (xcounter >= 3)
                 {
                     model.xo = "X str"; return true;
@@ -142,12 +153,15 @@ namespace XO_WebApp.Controllers
                 for (int j = 0; j < model.size; j++)
                 {
                     if (arr[j, i] == "X") xcounter++;
-                    else xcounter = 0;
+                    else if(xcounter <= 3)  xcounter = 0;
+
                     if (arr[j, i] == "O") ocounter++;
-                    else ocounter = 0;
+                    else if(ocounter <= 3)  ocounter = 0;
+
                     if (arr[j, i] == "✓") tcounter++;
-                    else tcounter = 0;
+                    else if(tcounter <= 3)  tcounter = 0;
                 }
+
                 if (xcounter >= 3)
                 {
                     model.xo = "X stlb"; return true;
@@ -192,49 +206,54 @@ namespace XO_WebApp.Controllers
                     {
                         tocheck = "✓";
                     }
-                    //проверим можем ли пойти вверх-влево
-                    if ((i - 1) > 0 && (j - 1) > 0)
+                    if (tocheck != "")
                     {
-                        //проверяем что есть сверху слева
-                        if (arr[i - 1, j - 1] == tocheck) counterUpLeft++;
+                        //проверим можем ли пойти вверх-влево
+                        if ((i - 1) > 0 && (j - 1) > 0)
+                        {
+                            //проверяем что есть сверху слева
+                            if (arr[i - 1, j - 1] == tocheck) counterUpLeft++;
+                        }
+                        //проверим можем ли пойти вверх-вправо
+                        if ((i + 1) < model.size && (j - 1) > 0)
+                        {
+                            //проверяем что ест
+                            if (arr[i + 1, j - 1] == tocheck) counterUpRight++;
+                        }
+                        //проверим можем ли пойти вниз-вправо
+                        if ((i + 1) < model.size && (j + 1) < model.size)
+                        {
+                            //проверяем что есть 
+                            if (arr[i + 1, j + 1] == tocheck) counterDownRight++;
+                        }
+                        //проверим можем ли пойти вниз-влево
+                        if ((i - 1) > 0 && (j + 1) < model.size)
+                        {
+                            //проверяем что есть
+                            if (arr[i - 1, j + 1] == tocheck) counterDownLeft++;
+                        }
+                        //проверяем счетчики. их сумма должна быть 2
+                        //02/06 - возможно ошибка что массив не с теми индексами
+                        //то есть i j перепутаны местами! надо проверить
+                        if (counterUpLeft + counterDownRight == 2 ||
+                            counterUpRight + counterDownLeft == 2)
+                        {
+                            win = true;
+                            model.xo = tocheck + " diag";
+                            return true;
+                        }
+                        //обнуляем счетчеги после проверки
+                        counterUpLeft = 0;
+                        //справа сверху
+                        counterUpRight = 0;
+                        //снизу справа
+                        counterDownRight = 0;
+                        //снизу слева
+                        counterDownLeft = 0;
                     }
-                    //проверим можем ли пойти вверх-вправо
-                    if ((i + 1) < model.size && (j - 1) > 0)
-                    {
-                        //проверяем что ест
-                        if (arr[i + 1, j - 1] == tocheck) counterUpRight++;
-                    }
-                    //проверим можем ли пойти вниз-вправо
-                    if ((i + 1) < model.size && (j + 1) < model.size)
-                    {
-                        //проверяем что есть 
-                        if (arr[i + 1, j + 1] == tocheck) counterDownRight++;
-                    }
-                    //проверим можем ли пойти вниз-влево
-                    if ((i - 1) > 0 && (j + 1) < model.size)
-                    {
-                        //проверяем что есть
-                        if (arr[i - 1, j + 1] == tocheck) counterDownLeft++;
-                    }
-                    //проверяем счетчики. их сумма должна быть 2
-                    if (counterUpLeft + counterDownRight == 2 || counterUpRight + counterDownLeft == 2)
-                    {
-                        win = true;
-                        model.xo = tocheck + " diag";
-                        return true;
-                    }
-                    //обнуляем счетчеги после проверки
-                    counterUpLeft = 0;
-                    //справа сверху
-                    counterUpRight = 0;
-                    //снизу справа
-                    counterDownRight = 0;
-                    //снизу слева
-                    counterDownLeft = 0;
-
                 }//конец цикла по строке
                 
-            }
+            }//конец проверки диагоналей
 
             return false;
         }
