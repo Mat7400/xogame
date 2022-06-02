@@ -164,6 +164,8 @@ namespace XO_WebApp.Controllers
             //проверка выигрыша чтоб прервать циклы
             bool win = false;
             //ПРОВЕРИМ ПО ДИАГОНАЛЯМ
+            //02.06.2022 надо сбрасывать счетчиким тоже
+            //если мы переходим на следующий элемент в строке
             for (int i = 0; i < model.size && !win; i++)
             {
                 string tocheck = "";
@@ -175,6 +177,7 @@ namespace XO_WebApp.Controllers
                 int counterDownRight = 0;
                 //снизу слева
                 int counterDownLeft = 0;
+                //цикл по строке слева направо
                 for (int j = 0; j < model.size && !win; j++)
                 {
                     if (arr[i, j] == "X")
@@ -213,14 +216,24 @@ namespace XO_WebApp.Controllers
                         //проверяем что есть
                         if (arr[i - 1, j + 1] == tocheck) counterDownLeft++;
                     }
-                }
-                //проверяем счетчики. их сумма должна быть 2
-                if (counterUpLeft + counterDownRight==2 || counterUpRight+counterDownLeft==2)
-                {
-                    win = true;
-                    model.xo = tocheck+" diag";
-                    return true;
-                }
+                    //проверяем счетчики. их сумма должна быть 2
+                    if (counterUpLeft + counterDownRight == 2 || counterUpRight + counterDownLeft == 2)
+                    {
+                        win = true;
+                        model.xo = tocheck + " diag";
+                        return true;
+                    }
+                    //обнуляем счетчеги после проверки
+                    counterUpLeft = 0;
+                    //справа сверху
+                    counterUpRight = 0;
+                    //снизу справа
+                    counterDownRight = 0;
+                    //снизу слева
+                    counterDownLeft = 0;
+
+                }//конец цикла по строке
+                
             }
 
             return false;
