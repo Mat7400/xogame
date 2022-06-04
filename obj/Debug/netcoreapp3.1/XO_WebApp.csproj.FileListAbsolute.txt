@@ -48,7 +48,6 @@ C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.pdb
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.Views.dll
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.Views.pdb
-C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csprojAssemblyReference.cache
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.AssemblyInfoInputs.cache
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.AssemblyInfo.cs
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csproj.CoreCompileInputs.cache

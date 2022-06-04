@@ -99,8 +99,11 @@ namespace XO_WebApp.Controllers
             //2) и то же самое оп всем столбцам
             //3) проверка диагоналей
             int initial = (int)'a';
-            string[,] arr = new string[5, 5];
-            
+            string[,] arr = new string[model.size, model.size];
+            //вот это поменять если захотим больше Символов подряд для выигрыша
+            //число 2 потому что счетчики идут с нуля (0,1,2)
+            int maxV = 3;
+            //
             foreach (var keyPair in model.Field)
             {
                 string cellname = keyPair.Key;
@@ -122,24 +125,24 @@ namespace XO_WebApp.Controllers
                 for (int j = 0; j < model.size; j++)
                 {
                     if (arr[i, j] == "X") xcounter++;
-                    else if (xcounter <= 3) xcounter = 0;
+                    else if (xcounter < maxV) xcounter = 0;
 
                     if (arr[i, j] == "O") ocounter++;
-                    else if (ocounter <= 3) ocounter = 0;
+                    else if (ocounter < maxV) ocounter = 0;
 
                     if (arr[i, j] == "✓") tcounter++;
-                    else if (tcounter <= 3) tcounter = 0;
+                    else if (tcounter < maxV) tcounter = 0;
                 }
 
-                if (xcounter >= 3)
+                if (xcounter >= maxV)
                 {
                     model.xo = "X str"; return true;
                 }
-                if (ocounter >= 3)
+                if (ocounter >= maxV)
                 {
                     model.xo = "O str"; return true;
                 }
-                if (tcounter >= 3)
+                if (tcounter >= maxV)
                 {
                     model.xo = "✓ str"; return true;
                 }
@@ -153,24 +156,24 @@ namespace XO_WebApp.Controllers
                 for (int j = 0; j < model.size; j++)
                 {
                     if (arr[j, i] == "X") xcounter++;
-                    else if(xcounter <= 3)  xcounter = 0;
+                    else if(xcounter < maxV)  xcounter = 0;
 
                     if (arr[j, i] == "O") ocounter++;
-                    else if(ocounter <= 3)  ocounter = 0;
+                    else if(ocounter < maxV)  ocounter = 0;
 
                     if (arr[j, i] == "✓") tcounter++;
-                    else if(tcounter <= 3)  tcounter = 0;
+                    else if(tcounter < maxV)  tcounter = 0;
                 }
 
-                if (xcounter >= 3)
+                if (xcounter >= maxV)
                 {
                     model.xo = "X stlb"; return true;
                 }
-                if (ocounter >= 3)
+                if (ocounter >= maxV)
                 {
                     model.xo = "O stlb"; return true;
                 }
-                if (tcounter >= 3)
+                if (tcounter >= maxV)
                 {
                     model.xo = "✓ stlb"; return true;
                 }
@@ -198,14 +201,16 @@ namespace XO_WebApp.Controllers
                     {
                         tocheck = "X";
                     }
-                    if (arr[i, j] == "O")
+                    else if (arr[i, j] == "O")
                     {
                         tocheck = "O";
                     }
-                    if (arr[i, j] == "✓")
+                    else if (arr[i, j] == "✓")
                     {
                         tocheck = "✓";
                     }
+                    else tocheck = "";
+
                     if (tocheck != "")
                     {
                         //проверим можем ли пойти вверх-влево
