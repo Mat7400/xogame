@@ -75,3 +75,6 @@ C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.pdb
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.genruntimeconfig.cache
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csproj.CopyComplete
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csprojAssemblyReference.cache
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\Razor\Views\Home\SinglePlayer.cshtml.g.cs
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\Razor\Views\Home\SinglePlayer55.cshtml.g.cs

@@ -7,6 +7,7 @@ namespace XO_WebApp.Models
 {
     public class MainModel
     {
+        public string Action = "SinglePlayer";
         public string xo="";
         public string Xplayer = "X";
         public string cellname = "";
