@@ -11,7 +11,7 @@ namespace XO_WebApp.Models
         public string xo="";
         public string Xplayer = "X";
         public string cellname = "";
-        public int size = 7;
+        public int size = 9;
         //простой вариант для хранения данных поля: создать 25 значений
         //а1..а5, b1..b5,c,d, e1..e5
         //второй вариант: создать массив или онг же словарь Dictionary Field["a5"]

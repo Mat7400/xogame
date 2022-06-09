@@ -18,6 +18,8 @@ namespace XO_WebApp.Controllers
             //вот это поменять если захотим больше Символов подряд для выигрыша
             //число 2 потому что счетчики идут с нуля (0,1,2)
             int maxV = 3;
+            if (model.size >= 9)
+                maxV = 4;
             //
             foreach (var keyPair in model.Field)
             {
@@ -129,13 +131,13 @@ namespace XO_WebApp.Controllers
                     if (tocheck != "")
                     {
                         //проверим можем ли пойти вверх-влево
-                        if ((i - 1) > 0 && (j - 1) > 0)
+                        if ((i - 1) >= 0 && (j - 1) >= 0)
                         {
                             //проверяем что есть сверху слева
                             if (arr[i - 1, j - 1] == tocheck) counterUpLeft++;
                         }
                         //проверим можем ли пойти вверх-вправо
-                        if ((i + 1) < model.size && (j - 1) > 0)
+                        if ((i + 1) < model.size && (j - 1) >= 0)
                         {
                             //проверяем что ест
                             if (arr[i + 1, j - 1] == tocheck) counterUpRight++;
@@ -147,7 +149,7 @@ namespace XO_WebApp.Controllers
                             if (arr[i + 1, j + 1] == tocheck) counterDownRight++;
                         }
                         //проверим можем ли пойти вниз-влево
-                        if ((i - 1) > 0 && (j + 1) < model.size)
+                        if ((i - 1) >= 0 && (j + 1) < model.size)
                         {
                             //проверяем что есть
                             if (arr[i - 1, j + 1] == tocheck) counterDownLeft++;

@@ -28,7 +28,9 @@ using XO_WebApp.Models;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802", @"/Views/Home/SinglePlayer.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1852395f52f8846df74371979fd4b911549cb878", @"/Views/_ViewImports.cshtml")]
+    #nullable restore
     public class Views_Home_SinglePlayer : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MainModel>
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "reload", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "test", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -115,7 +117,7 @@ using XO_WebApp.Models;
 #nullable disable
             WriteLiteral("\n");
             WriteLiteral("\n<div class=\"text-center\">\n    <h1 class=\"display-4\">Welcome to XO by mat7400 - sinleplayer mode 7x7 </h1>\n    <!-- поле 7х7 -->\n    <p>\n        >Click  to generate X or O</p>\n        <p> \n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80219144", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80219190", async() => {
                 WriteLiteral("reload game");
             }
             );
@@ -139,7 +141,7 @@ using XO_WebApp.Models;
 #line hidden
 #nullable disable
             WriteLiteral(" move</p>\n    <div id=\"str1\" style=\"display:inline-block;\">\n        <!-- надо передать в контроллер (в функцию test)  2 параметра: имя клетки где тыкнул игрок\n        и какой игрок ходит(Х или 0)-->\n        <div id=\"a1\">\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80220805", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80220851", async() => {
                 WriteLiteral("\n                ");
 #nullable restore
 #line 21 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
@@ -184,7 +186,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n        </div>\n        <div id=\"a2\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80223855", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80223901", async() => {
                 WriteLiteral("\n            ");
 #nullable restore
 #line 26 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
@@ -228,7 +230,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"a3\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80226834", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80226880", async() => {
 #nullable restore
 #line 28 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                    Write(Model.Field["a2"]);
@@ -271,7 +273,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"a4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80229830", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80229876", async() => {
 #nullable restore
 #line 29 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["a3"]);
@@ -314,7 +316,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"a5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80232852", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80232898", async() => {
 #nullable restore
 #line 30 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["a4"]);
@@ -358,7 +360,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"a6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80235910", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80235956", async() => {
 #nullable restore
 #line 31 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["a5"]);
@@ -402,7 +404,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"a7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80238968", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80239014", async() => {
 #nullable restore
 #line 32 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["a6"]);
@@ -446,7 +448,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str2\" style=\"display:inline-block;\">\n\n        <div id=\"b1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80242095", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80242141", async() => {
 #nullable restore
 #line 36 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b0"]);
@@ -489,7 +491,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"b2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80245117", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80245163", async() => {
 #nullable restore
 #line 37 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b1"]);
@@ -532,7 +534,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"b3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80248141", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80248187", async() => {
 #nullable restore
 #line 38 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b2"]);
@@ -575,7 +577,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"b4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80251165", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80251211", async() => {
 #nullable restore
 #line 39 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b3"]);
@@ -618,7 +620,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"b5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80254189", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80254235", async() => {
 #nullable restore
 #line 40 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b4"]);
@@ -662,7 +664,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"b6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80257251", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80257297", async() => {
 #nullable restore
 #line 42 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b5"]);
@@ -706,7 +708,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"b7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80260311", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80260357", async() => {
 #nullable restore
 #line 43 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["b6"]);
@@ -750,7 +752,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str3\" style=\"display:inline-block;\">\n\n        <div id=\"c1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80263440", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80263486", async() => {
 #nullable restore
 #line 47 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c0"]);
@@ -793,7 +795,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"c2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80266464", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80266510", async() => {
 #nullable restore
 #line 48 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c1"]);
@@ -836,7 +838,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"c3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80269488", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80269534", async() => {
 #nullable restore
 #line 49 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c2"]);
@@ -879,7 +881,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"c4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80272512", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80272558", async() => {
 #nullable restore
 #line 50 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c3"]);
@@ -922,7 +924,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"c5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80275536", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80275582", async() => {
 #nullable restore
 #line 51 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c4"]);
@@ -966,7 +968,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"c6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80278598", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80278644", async() => {
 #nullable restore
 #line 53 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c5"]);
@@ -1010,7 +1012,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"c7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80281658", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80281704", async() => {
 #nullable restore
 #line 54 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["c6"]);
@@ -1054,7 +1056,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str4\" style=\"display:inline-block;\">\n\n        <div id=\"d1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80284787", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80284833", async() => {
 #nullable restore
 #line 58 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d0"]);
@@ -1097,7 +1099,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"d2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80287811", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80287857", async() => {
 #nullable restore
 #line 59 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d1"]);
@@ -1140,7 +1142,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"d3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80290835", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80290881", async() => {
 #nullable restore
 #line 60 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d2"]);
@@ -1183,7 +1185,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"d4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80293859", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80293905", async() => {
 #nullable restore
 #line 61 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d3"]);
@@ -1226,7 +1228,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"d5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80296883", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80296929", async() => {
 #nullable restore
 #line 62 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d4"]);
@@ -1270,7 +1272,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"d6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80299945", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab80299991", async() => {
 #nullable restore
 #line 64 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d5"]);
@@ -1314,7 +1316,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"d7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802103005", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802103051", async() => {
 #nullable restore
 #line 65 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["d6"]);
@@ -1358,7 +1360,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str5\" style=\"display:inline-block;\">\n\n        <div id=\"e1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802106135", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802106181", async() => {
 #nullable restore
 #line 69 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e0"]);
@@ -1401,7 +1403,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"e2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802109160", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802109206", async() => {
 #nullable restore
 #line 70 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e1"]);
@@ -1444,7 +1446,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"e3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802112185", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802112231", async() => {
 #nullable restore
 #line 71 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e2"]);
@@ -1487,7 +1489,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"e4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802115210", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802115256", async() => {
 #nullable restore
 #line 72 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e3"]);
@@ -1530,7 +1532,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"e5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802118235", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802118281", async() => {
 #nullable restore
 #line 73 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e4"]);
@@ -1574,7 +1576,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"e6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802121298", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802121344", async() => {
 #nullable restore
 #line 75 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e5"]);
@@ -1618,7 +1620,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"e7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802124359", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802124405", async() => {
 #nullable restore
 #line 76 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["e6"]);
@@ -1662,7 +1664,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str6\" style=\"display:inline-block;\">\n\n        <div id=\"f1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802127489", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802127535", async() => {
 #nullable restore
 #line 80 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f0"]);
@@ -1705,7 +1707,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"f2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802130514", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802130560", async() => {
 #nullable restore
 #line 81 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f1"]);
@@ -1748,7 +1750,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"f3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802133539", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802133585", async() => {
 #nullable restore
 #line 82 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f2"]);
@@ -1791,7 +1793,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"f4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802136564", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802136610", async() => {
 #nullable restore
 #line 83 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f3"]);
@@ -1834,7 +1836,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"f5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802139589", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802139635", async() => {
 #nullable restore
 #line 84 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f4"]);
@@ -1878,7 +1880,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"f6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802142652", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802142698", async() => {
 #nullable restore
 #line 86 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f5"]);
@@ -1922,7 +1924,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"f7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802145713", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802145759", async() => {
 #nullable restore
 #line 87 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["f6"]);
@@ -1966,7 +1968,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n    </div>\n    <div id=\"str7\" style=\"display:inline-block;\">\n\n        <div id=\"g1\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802148843", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802148889", async() => {
 #nullable restore
 #line 91 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g0"]);
@@ -2009,7 +2011,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"g2\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802151868", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802151914", async() => {
 #nullable restore
 #line 92 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g1"]);
@@ -2052,7 +2054,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"g3\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802154893", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802154939", async() => {
 #nullable restore
 #line 93 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g2"]);
@@ -2095,7 +2097,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"g4\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802157918", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802157964", async() => {
 #nullable restore
 #line 94 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g3"]);
@@ -2138,7 +2140,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"g5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802160943", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802160989", async() => {
 #nullable restore
 #line 95 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g4"]);
@@ -2182,7 +2184,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n\n        <div id=\"g6\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802164006", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802164052", async() => {
 #nullable restore
 #line 97 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g5"]);
@@ -2226,7 +2228,7 @@ using XO_WebApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</div>\n        <div id=\"g7\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802167067", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bd37ebed3bb0075c0feaa5e19c8d3f35b4ab802167113", async() => {
 #nullable restore
 #line 98 "C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\Views\Home\SinglePlayer.cshtml"
                                                                                                 Write(Model.Field["g6"]);
@@ -2272,16 +2274,26 @@ using XO_WebApp.Models;
             WriteLiteral("</div>\n    </div>\n</div>\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<MainModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<MainModel> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591

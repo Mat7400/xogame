@@ -39,7 +39,6 @@ C:\Users\матвей1\source\repos\XO_WebApp\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\матвей1\source\repos\XO_WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\win.cshtml.g.cs
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.exe
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.deps.json
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\bin\Debug\netcoreapp3.1\XO_WebApp.runtimeconfig.json
@@ -70,11 +69,12 @@ C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.RazorTargetAssemblyInfo.cs
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.Views.pdb
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\staticwebassets\XO_WebApp.StaticWebAssets.Manifest.cache
-C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\staticwebassets\XO_WebApp.StaticWebAssets.xml
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.dll
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.pdb
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.genruntimeconfig.cache
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csproj.CopyComplete
-C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csprojAssemblyReference.cache
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\Razor\Views\Home\SinglePlayer.cshtml.g.cs
 C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\Razor\Views\Home\SinglePlayer55.cshtml.g.cs
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.csproj.AssemblyReference.cache
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\XO_WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matve\Downloads\XOWebAppMVC-main\XOWebAppMVC-main\obj\Debug\netcoreapp3.1\Razor\Views\Home\SinglePlayer99.cshtml.g.cs

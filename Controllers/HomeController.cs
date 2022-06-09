@@ -46,10 +46,20 @@ namespace XO_WebApp.Controllers
             Program.mainModelData.Action = "SinglePlayer55";
             return View(Program.mainModelData);
         }
+        public IActionResult SinglePlayer99(MainModel model)
+        {
+            if (Program.mainModelData == null)
+                Program.mainModelData = new MainModel();
+            //model.xo = "resutl will be here"; 
+            Program.mainModelData.Action = "SinglePlayer99";
+            return View(Program.mainModelData);
+        }
         public IActionResult reload()
         {
+            string action  = Program.mainModelData.Action;
             Program.mainModelData = new MainModel();
             var model = Program.mainModelData;
+            Program.mainModelData.Action = action; 
             model.Field = new Dictionary<string, string>();
             int ia = (int)'a';
             char a = 'a';
@@ -63,7 +73,7 @@ namespace XO_WebApp.Controllers
                 ia++;
                 a = (char)ia;
             }
-            return RedirectToAction("SinglePlayer", model);
+            return RedirectToAction(action, model);
         }
         public IActionResult test(string cellname = "", string xplayer = "X")
         {
