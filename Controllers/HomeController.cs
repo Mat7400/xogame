@@ -79,6 +79,11 @@ namespace XO_WebApp.Controllers
         {
             Random rnd = new Random();
             int res = rnd.Next(1, 100);
+            //check
+            if (Program.mainModelData == null)
+                Program.mainModelData = new MainModel();
+
+            xplayer = Program.mainModelData.CurrentPlayer;
             string RES = "";
             string next = "";
             if (xplayer == "X" || xplayer == "")
@@ -97,16 +102,18 @@ namespace XO_WebApp.Controllers
                 RES = "✓";
                 next = "X";
             }
-            //check
-            if (Program.mainModelData == null)
-                Program.mainModelData = new MainModel();
+            
 
             var model = Program.mainModelData;
             //заполнить клеточку поля 
             model.Field[cellname] = RES;
+            int ind = (int)cellname[0] - (int)'a';
+            int ind2 = Convert.ToInt32( cellname[1].ToString() );
+            //нужно заполнить филд2
+            model.Field2[ind, ind2] = RES;
 
             model.xo = RES;
-            model.Xplayer = next;
+            model.CurrentPlayer = next;
             model.cellname = cellname;
             //проверка на победу
             bool resWin = CheckWin.checkWin(Program.mainModelData);
