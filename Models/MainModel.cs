@@ -50,8 +50,10 @@ namespace XO_WebApp.Models
                 for (int j = 0; j < size; j++)
                 {
                     string str = "";
+                    string url = "https://dictionary.cambridge.org/ru/images/thumb/triang_noun_001_18172.jpg?version=5.0.243";
                     // href = "/Home/test?cellname=a0&xplayer=X"
-                    str = str + "<div style=\"margin:5px;padding:5px\"><a  href=\"/Home/test?cellname=" + aa + j + "\" > ";
+                    str = str + "<div style=\"margin:5px; padding:5px;\" \">" +
+                        "<a style=\"background-size: cover; background-image: url(\'" + url + "\'); \"  href=\"/Home/test?cellname=" + aa + j + "\" > ";
                         //@Model.Field[\""+aa+j+"\"]
                        // +"</a></div>";
                     strarr[i, j] = str;

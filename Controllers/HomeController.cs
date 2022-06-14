@@ -86,23 +86,37 @@ namespace XO_WebApp.Controllers
             xplayer = Program.mainModelData.CurrentPlayer;
             string RES = "";
             string next = "";
+            //главное место где галочка фигурирует
+            //if (xplayer == "X" || xplayer == "")
+            //{
+            //    RES = "X";
+            //    next = "O";
+            //}
+
+            //else  if(xplayer == "O")
+            //{
+            //    RES = "O";
+            //    next = "✓";
+            //}
+            //else
+            //{
+            //    RES = "✓";
+            //    next = "X";
+            //}
+
             if (xplayer == "X" || xplayer == "")
             {
                 RES = "X";
                 next = "O";
             }
 
-            else  if(xplayer == "O")
+            else if (xplayer == "O")
             {
                 RES = "O";
-                next = "✓";
-            }
-            else
-            {
-                RES = "✓";
                 next = "X";
             }
             
+
 
             var model = Program.mainModelData;
             //заполнить клеточку поля 

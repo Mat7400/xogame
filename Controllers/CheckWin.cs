@@ -18,8 +18,10 @@ namespace XO_WebApp.Controllers
             //вот это поменять если захотим больше Символов подряд для выигрыша
             //число 2 потому что счетчики идут с нуля (0,1,2)
             int maxV = 3;
-            if (model.size >= 9)
+            
+            if (model.Action == "SinglePlayer99")
                 maxV = 4;
+
             //
             foreach (var keyPair in model.Field)
             {
